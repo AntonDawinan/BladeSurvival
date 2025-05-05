@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blade Survivor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="score">Score: 0</div>
+    <div id="highScore">High Score: 0</div>
+    <div id="wave">Wave: 1</div>
+    <div id="health"><div id="healthBar"></div></div>
+
+    <div id="staminaContainer">
+      <div id="staminaBar"></div>
+    </div>
+
+    <div class="game-over-container">
+      <div class="game-over-text">GAME OVER</div>
+      <div class="final-score">Score: <span id="finalScore">0</span></div>
+      <div class="high-score-notification" id="highScoreNotification">NEW HIGH SCORE!</div>
+      <button id="retryBtn">Retry</button>
+      <a href="index.html" class="btn btn-play">Main Menu</a>
+    </div>
+    
+    <div id="pauseOverlay">
+      <div class="pause-content">
+        <h1>PAUSED</h1>
+        <p>Press ESC to continue</p>
+        <a href="index.html" class="btn btn-play">Main Menu</a>
+      </div>
+    </div>
+    
+    <div class="touch-joystick"></div>
+    <div class="touch-shoot"></div>
+
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
